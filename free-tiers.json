@@ -1,0 +1,477 @@
+{
+  "name": "AI Free Tier Ledger",
+  "description": "Hand-verified ledger of AI free tiers: what is free, exact limits, the catch, and last-verified dates.",
+  "url": "https://getaitools.dev",
+  "license": "CC-BY-4.0 (link back to getaitools.dev)",
+  "date_modified": "2026-07-02",
+  "entry_count": 33,
+  "corrections": "https://forms.gle/2BMoqgLPATVoLUzz5",
+  "change_history": "https://getaitools.dev/changes.json",
+  "categories": [
+    {
+      "id": "chat",
+      "name": "Chat assistants",
+      "entries": [
+        {
+          "service": "ChatGPT",
+          "slug": "chatgpt",
+          "url": "chatgpt.com",
+          "anchor": "https://getaitools.dev/#chatgpt",
+          "history_page": "https://getaitools.dev/service/chatgpt",
+          "whats_free": "Flagship auto model, file uploads, image generation, a small daily budget of thinking-mode messages.",
+          "limits": "~10 msgs / 5 h fast window, then auto-downgrade to mini model",
+          "catch": "Limits are dynamic. Opting out of personalized ads can cut the cap to as low as ~5 msgs / 3 h.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Claude",
+          "slug": "claude",
+          "url": "claude.ai",
+          "anchor": "https://getaitools.dev/#claude",
+          "history_page": "https://getaitools.dev/service/claude",
+          "whats_free": "Claude Sonnet (current gen) on web, iOS, Android and desktop. File uploads and artifacts included.",
+          "limits": "Daily message cap, varies with demand",
+          "catch": "Caps shrink at peak hours. Long conversations burn the quota much faster.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "DeepSeek",
+          "slug": "deepseek",
+          "url": "chat.deepseek.com",
+          "anchor": "https://getaitools.dev/#deepseek",
+          "history_page": "https://getaitools.dev/service/deepseek",
+          "whats_free": "Full flagship model including the reasoning mode, on web and mobile.",
+          "limits": "No published caps",
+          "catch": "Data is processed in China and chats are used for training by default.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Perplexity",
+          "slug": "perplexity",
+          "url": "perplexity.ai",
+          "anchor": "https://getaitools.dev/#perplexity",
+          "history_page": "https://getaitools.dev/service/perplexity",
+          "whats_free": "Unlimited quick AI searches with citations.",
+          "limits": "~5 Pro searches / day",
+          "catch": "No Deep Research, Labs or premium model picker on the free plan.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Gemini",
+          "slug": "gemini",
+          "url": "gemini.google.com",
+          "anchor": "https://getaitools.dev/#gemini",
+          "history_page": "https://getaitools.dev/service/gemini",
+          "whats_free": "Gemini Flash chat, limited Pro access, image generation, 5 Deep Research uses/month, Google app integrations.",
+          "limits": "Compute-based caps: refresh every 5 h, plus a weekly ceiling",
+          "catch": "Limits scale with prompt complexity and chat length, so heavy use runs out sooner. Top models and higher caps need a Google AI plan.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Microsoft Copilot",
+          "slug": "microsoft-copilot",
+          "url": "copilot.microsoft.com",
+          "anchor": "https://getaitools.dev/#microsoft-copilot",
+          "history_page": "https://getaitools.dev/service/microsoft-copilot",
+          "whats_free": "GPT-class chat with web grounding, voice, and image generation (15 fast boosts/week, slow queue after).",
+          "limits": "Dynamic throttling at peak times; images 1024x1024 only",
+          "catch": "Free image output is licensed for personal, non-commercial use.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Le Chat (Mistral)",
+          "slug": "le-chat-mistral",
+          "url": "chat.mistral.ai",
+          "anchor": "https://getaitools.dev/#le-chat-mistral",
+          "history_page": "https://getaitools.dev/service/le-chat-mistral",
+          "whats_free": "Top Mistral models, web search, image generation, code interpreter, 40+ connectors.",
+          "limits": "~25 messages/day soft cap",
+          "catch": "No Mistral Large, Flash Answers or no-telemetry mode on the free plan.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Grok",
+          "slug": "grok",
+          "url": "grok.com / x.com",
+          "anchor": "https://getaitools.dev/#grok",
+          "history_page": "https://getaitools.dev/service/grok",
+          "whats_free": "Grok text chat on grok.com and X for logged-in users.",
+          "limits": "~10 messages / 2 h",
+          "catch": "Needs an X account 7+ days old with a verified phone number. Image generation is paid-only.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "name": "LLM APIs for developers",
+      "entries": [
+        {
+          "service": "Gemini API",
+          "slug": "gemini-api",
+          "url": "ai.google.dev",
+          "anchor": "https://getaitools.dev/#gemini-api",
+          "history_page": "https://getaitools.dev/service/gemini-api",
+          "whats_free": "Real ongoing free tier on most Gemini models via AI Studio, including multimodal.",
+          "limits": "Per model, e.g. Flash ~1,500 req/day, Pro ~50 req/day. Resets midnight PT",
+          "catch": "Enabling billing on the project kills the free tier instantly. Free-tier data may be used for training.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Groq",
+          "slug": "groq",
+          "url": "groq.com",
+          "anchor": "https://getaitools.dev/#groq",
+          "history_page": "https://getaitools.dev/service/groq",
+          "whats_free": "OpenAI-compatible API. Llama 3.3 70B and others at ~300 tokens/sec.",
+          "limits": "~30 req/min, 1,000 req/day, 100K tokens/day (llama-3.3-70b)",
+          "catch": "Free limits were cut hard in 2026 (daily requests dropped from 14,400 to 1,000 on most models).",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Cerebras",
+          "slug": "cerebras",
+          "url": "cerebras.ai",
+          "anchor": "https://getaitools.dev/#cerebras",
+          "history_page": "https://getaitools.dev/service/cerebras",
+          "whats_free": "Fastest inference around (~2,000 tokens/sec) on Llama-family models.",
+          "limits": "~1M tokens/day",
+          "catch": "Small model selection compared to other providers.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Mistral API",
+          "slug": "mistral-api",
+          "url": "console.mistral.ai",
+          "anchor": "https://getaitools.dev/#mistral-api",
+          "history_page": "https://getaitools.dev/service/mistral-api",
+          "whats_free": "Experiment tier: roughly 1B tokens/month across Mistral models. One of the most generous quotas anywhere.",
+          "limits": "~1B tokens/month, ~50K tokens/min",
+          "catch": "You must opt in to letting Mistral train on your data to get the free tier.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "OpenRouter",
+          "slug": "openrouter",
+          "url": "openrouter.ai",
+          "anchor": "https://getaitools.dev/#openrouter",
+          "history_page": "https://getaitools.dev/service/openrouter",
+          "whats_free": "Dozens of \":free\" models from many labs behind one OpenAI-compatible key.",
+          "limits": "200 req/day across free models",
+          "catch": "A one-time $10 credit purchase lifts the cap to 1,000 req/day. Free models may log or train on prompts and can vanish without notice.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "GitHub Models",
+          "slug": "github-models",
+          "url": "github.com/marketplace/models",
+          "anchor": "https://getaitools.dev/#github-models",
+          "history_page": "https://getaitools.dev/service/github-models",
+          "whats_free": "Playground and API access to GPT, Llama and more with any GitHub account.",
+          "limits": "High-tier models 50 req/day (10/min), mini models 150 req/day; 8K tokens in / 4K out per request",
+          "catch": "Prototyping only: per-request token caps are tight and concurrency is 2.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Cohere",
+          "slug": "cohere",
+          "url": "cohere.com",
+          "anchor": "https://getaitools.dev/#cohere",
+          "history_page": "https://getaitools.dev/service/cohere",
+          "whats_free": "Trial key for Command models, embeddings and rerank. Never expires, no card needed.",
+          "limits": "1,000 calls/month across all endpoints, 20 req/min",
+          "catch": "Evaluation only; commercial use requires a paid production key.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Hugging Face",
+          "slug": "hugging-face",
+          "url": "huggingface.co",
+          "anchor": "https://getaitools.dev/#hugging-face",
+          "history_page": "https://getaitools.dev/service/hugging-face",
+          "whats_free": "Small monthly inference credit usable across hosted open models.",
+          "limits": "~$0.10/month in credits on free accounts",
+          "catch": "The free credit is symbolic. Real usage needs PRO ($9/mo, $2 in credits) or your own hardware.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "OpenAI / Anthropic APIs",
+          "slug": "openai-anthropic-apis",
+          "url": "platform.openai.com / anthropic.com",
+          "anchor": "https://getaitools.dev/#openai-anthropic-apis",
+          "history_page": "https://getaitools.dev/service/openai-anthropic-apis",
+          "whats_free": "OpenAI: a daily free-token allowance if you opt in to sharing your API data (up to ~1M tokens/day on frontier models, ~10M/day on mini). Anthropic: a one-time $5 trial credit.",
+          "limits": "OpenAI: daily, opt-in only; Anthropic: one-time",
+          "catch": "OpenAI's free tokens cost you your data. Anthropic's $5 needs SMS verification and is a trial, not a tier. The old OpenAI $5 welcome credit is gone.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "name": "Coding assistants",
+      "entries": [
+        {
+          "service": "GitHub Copilot Free",
+          "slug": "github-copilot-free",
+          "url": "github.com/features/copilot",
+          "anchor": "https://getaitools.dev/#github-copilot-free",
+          "history_page": "https://getaitools.dev/service/github-copilot-free",
+          "whats_free": "Completions plus chat and agent mode in VS Code, JetBrains, Neovim and the CLI.",
+          "limits": "2,000 completions/mo, 50 chat or agent requests/mo",
+          "catch": "Auto model selection only. Agent mode eats the 50-request budget very fast.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": true
+        },
+        {
+          "service": "Gemini CLI",
+          "slug": "gemini-cli",
+          "url": "geminicli.com",
+          "anchor": "https://getaitools.dev/#gemini-cli",
+          "history_page": "https://getaitools.dev/service/gemini-cli",
+          "whats_free": "Full terminal coding agent with a personal Google account.",
+          "limits": "1,000 model requests/day, 60/min",
+          "catch": "You don't pick the model: the CLI decides which Gemini model serves each request. Big agentic tasks burn the quota fast.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Windsurf Free",
+          "slug": "windsurf-free",
+          "url": "windsurf.com",
+          "anchor": "https://getaitools.dev/#windsurf-free",
+          "history_page": "https://getaitools.dev/service/windsurf-free",
+          "whats_free": "Full editor with unlimited Tab autocomplete.",
+          "limits": "~25 agent (Cascade) actions/month",
+          "catch": "Pricing was overhauled in March 2026 (credits replaced by quotas); premium models stay gated to paid plans.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Cursor Hobby",
+          "slug": "cursor-hobby",
+          "url": "cursor.com",
+          "anchor": "https://getaitools.dev/#cursor-hobby",
+          "history_page": "https://getaitools.dev/service/cursor-hobby",
+          "whats_free": "Limited agent requests and tab completions to try the editor.",
+          "limits": "Small monthly cap, exact numbers unpublished",
+          "catch": "Cursor doesn't publish concrete Hobby-plan numbers. It's a demo, not a daily driver; power features need Pro.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Cline / Continue / Aider",
+          "slug": "cline-continue-aider",
+          "url": "open source",
+          "anchor": "https://getaitools.dev/#cline-continue-aider",
+          "history_page": "https://getaitools.dev/service/cline-continue-aider",
+          "whats_free": "The tools themselves, forever. Open source coding agents for VS Code and terminal.",
+          "limits": "None. Bring your own model",
+          "catch": "You supply the model. Pair with the free APIs above (Gemini, Groq, Cerebras) for a genuine $0 coding stack.",
+          "last_verified": null,
+          "status": "ever",
+          "no_card_needed": false
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "name": "Image generation",
+      "entries": [
+        {
+          "service": "Bing Image Creator",
+          "slug": "bing-image-creator",
+          "url": "bing.com/create",
+          "anchor": "https://getaitools.dev/#bing-image-creator",
+          "history_page": "https://getaitools.dev/service/bing-image-creator",
+          "whats_free": "GPT-image generation, 4 variations per prompt. Unlimited slow-queue after boosts run out.",
+          "limits": "15 fast boosts/week (~60 fast images)",
+          "catch": "1024x1024 only, no other sizes. Output licensed personal, non-commercial by default.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Ideogram",
+          "slug": "ideogram",
+          "url": "ideogram.ai",
+          "anchor": "https://getaitools.dev/#ideogram",
+          "history_page": "https://getaitools.dev/service/ideogram",
+          "whats_free": "Daily credits, no watermark, best-in-class text rendering inside images. Commercial use explicitly allowed.",
+          "limits": "10 credits/day, slow queue",
+          "catch": "Free generations are public in the community gallery.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Leonardo AI",
+          "slug": "leonardo-ai",
+          "url": "leonardo.ai",
+          "anchor": "https://getaitools.dev/#leonardo-ai",
+          "history_page": "https://getaitools.dev/service/leonardo-ai",
+          "whats_free": "Daily token allowance across models, roughly 15 to 35 standard images per day.",
+          "limits": "150 tokens/day",
+          "catch": "Free generations are public by default.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Google Flow (ex ImageFX / Whisk)",
+          "slug": "google-flow-ex-imagefx-whisk",
+          "url": "labs.google",
+          "anchor": "https://getaitools.dev/#google-flow-ex-imagefx-whisk",
+          "history_page": "https://getaitools.dev/service/google-flow-ex-imagefx-whisk",
+          "whats_free": "Imagen image generation and limited Veo video with a Google account.",
+          "limits": "Monthly credit allowance",
+          "catch": "ImageFX and Whisk were shut down in April 2026 and folded into Flow. Output is watermarked (SynthID).",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Stable Diffusion / Flux (local)",
+          "slug": "stable-diffusion-flux-local",
+          "url": "open weights",
+          "anchor": "https://getaitools.dev/#stable-diffusion-flux-local",
+          "history_page": "https://getaitools.dev/service/stable-diffusion-flux-local",
+          "whats_free": "Unlimited private generation on your own machine. Commercial use OK for most model licenses.",
+          "limits": "None. Your hardware is the limit",
+          "catch": "Needs a GPU (8GB+ VRAM for comfort) and some setup patience. Check each model's license.",
+          "last_verified": null,
+          "status": "ever",
+          "no_card_needed": false
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "name": "Voice and music",
+      "entries": [
+        {
+          "service": "ElevenLabs",
+          "slug": "elevenlabs",
+          "url": "elevenlabs.io",
+          "anchor": "https://getaitools.dev/#elevenlabs",
+          "history_page": "https://getaitools.dev/service/elevenlabs",
+          "whats_free": "Top-tier text-to-speech, about 10 minutes of audio per month.",
+          "limits": "10,000 credits/mo",
+          "catch": "No commercial use on free; attribution required in anything public.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Suno",
+          "slug": "suno",
+          "url": "suno.com",
+          "anchor": "https://getaitools.dev/#suno",
+          "history_page": "https://getaitools.dev/service/suno",
+          "whats_free": "Full-song music generation, about 10 songs per day on the current model.",
+          "limits": "50 credits/day",
+          "catch": "No commercial use, no stem separation, shared (slower) queue.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Whisper (local)",
+          "slug": "whisper-local",
+          "url": "open source",
+          "anchor": "https://getaitools.dev/#whisper-local",
+          "history_page": "https://getaitools.dev/service/whisper-local",
+          "whats_free": "Unlimited speech-to-text transcription on your own machine, 90+ languages.",
+          "limits": "None. Your hardware is the limit",
+          "catch": "Large models want a decent GPU; small ones run fine on CPU.",
+          "last_verified": null,
+          "status": "ever",
+          "no_card_needed": false
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "name": "Video generation",
+      "entries": [
+        {
+          "service": "Kling",
+          "slug": "kling",
+          "url": "klingai.com",
+          "anchor": "https://getaitools.dev/#kling",
+          "history_page": "https://getaitools.dev/service/kling",
+          "whats_free": "Daily credit allowance for short clips.",
+          "limits": "66 credits/day, ~5 seconds of standard video",
+          "catch": "Slow queue on free; watermark on output.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Luma Dream Machine",
+          "slug": "luma-dream-machine",
+          "url": "lumalabs.ai",
+          "anchor": "https://getaitools.dev/#luma-dream-machine",
+          "history_page": "https://getaitools.dev/service/luma-dream-machine",
+          "whats_free": "Small daily credit pool in the Dream Machine app.",
+          "limits": "Roughly one short 720p clip per day, no audio",
+          "catch": "Permanent watermark, non-commercial only, and unused daily credits don't roll over.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        },
+        {
+          "service": "Runway",
+          "slug": "runway",
+          "url": "runwayml.com",
+          "anchor": "https://getaitools.dev/#runway",
+          "history_page": "https://getaitools.dev/service/runway",
+          "whats_free": "One-time credit grant to try Gen models.",
+          "limits": "125 one-time credits (~25 seconds of video)",
+          "catch": "Not a recurring free tier: once spent, it's gone. Watermarked.",
+          "last_verified": "2026-07-02",
+          "status": "verified",
+          "no_card_needed": false
+        }
+      ]
+    }
+  ]
+}

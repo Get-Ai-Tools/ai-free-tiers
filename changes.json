@@ -1,0 +1,78 @@
+{
+  "name": "AI Free Tier Change History",
+  "description": "Append-only record of every change to the AI Free Tier Ledger: structured before/after values with dates. Wording edits appear alongside real limit changes.",
+  "url": "https://getaitools.dev/changes.json",
+  "license": "CC-BY-4.0 (link back to getaitools.dev)",
+  "changes": [
+    {
+      "date": "2026-07-02",
+      "service": "Groq",
+      "category": "api",
+      "type": "changed",
+      "field": "limits",
+      "old": "~30 req/min, 14,400 req/day (llama-3.3-70b)",
+      "new": "~30 req/min, 1,000 req/day, 100K tokens/day (llama-3.3-70b)",
+      "note": "Cut happened earlier in 2026; recorded when verified."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "OpenAI API",
+      "category": "api",
+      "type": "changed",
+      "field": "whats_free",
+      "old": "One-time $5 welcome credit for new accounts (discontinued mid-2025)",
+      "new": "Daily free-token allowance with API data-sharing opt-in: up to ~1M tokens/day on frontier models, ~10M/day on mini models",
+      "note": "Recorded when verified; the data-sharing program replaced the welcome credit."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Google ImageFX / Whisk",
+      "category": "image",
+      "type": "removed",
+      "field": null,
+      "old": "Free Imagen-family generation with a Google account",
+      "new": null,
+      "note": "Shut down April 2026, folded into Google Flow."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Google Flow",
+      "category": "image",
+      "type": "added",
+      "field": null,
+      "old": null,
+      "new": "Imagen image generation and limited Veo video with a Google account, monthly credit allowance",
+      "note": "Successor to ImageFX and Whisk."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Windsurf",
+      "category": "code",
+      "type": "changed",
+      "field": "limits",
+      "old": "Monthly prompt-credit allowance",
+      "new": "Unlimited Tab autocomplete, ~25 agent (Cascade) actions/month",
+      "note": "Pricing overhauled March 2026: credits replaced by daily/weekly quotas."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "Gemini",
+      "category": "chat",
+      "type": "changed",
+      "field": "limits",
+      "old": "Daily message caps, unpublished",
+      "new": "Compute-based caps refreshing every 5 h with a weekly ceiling; 5 Deep Research uses/month",
+      "note": "Google switched the free app plan from message counts to compute-based limits."
+    },
+    {
+      "date": "2026-07-02",
+      "service": "ChatGPT",
+      "category": "chat",
+      "type": "changed",
+      "field": "catch",
+      "old": "Limits are dynamic",
+      "new": "Limits are dynamic; opting out of personalized ads can cut the free cap to as low as ~5 msgs / 3 h",
+      "note": "Ads opt-out penalty verified 2026-07-02."
+    }
+  ]
+}
