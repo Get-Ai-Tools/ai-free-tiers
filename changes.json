@@ -5,6 +5,215 @@
   "license": "CC-BY-4.0 (link back to getaitools.dev)",
   "changes": [
     {
+      "date": "2026-07-04",
+      "service": "Perplexity",
+      "category": "chat",
+      "type": "changed",
+      "field": "limits",
+      "old": "~5 Pro searches / day",
+      "new": "~5 Pro searches / day, a few Deep Research runs / day"
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Perplexity",
+      "category": "chat",
+      "type": "changed",
+      "field": "catch",
+      "old": "No Deep Research, Labs or premium model picker on the free plan.",
+      "new": "No Labs or premium model picker on the free plan; Deep Research is capped to a handful of runs a day.",
+      "note": "Correction: Perplexity's own Deep Research announcement says non-subscribers get a limited number of runs per day, so 'No Deep Research' was too absolute."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Cerebras",
+      "category": "api",
+      "type": "changed",
+      "field": "whats_free",
+      "old": "Fastest inference around (~2,000 tokens/sec) on Llama-family models.",
+      "new": "Fastest inference around (~2,000 tokens/sec) on a rotating lineup of open-weight models (Llama, Qwen, GPT-OSS)."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Cerebras",
+      "category": "api",
+      "type": "changed",
+      "field": "catch",
+      "old": "Small model selection compared to other providers.",
+      "new": "Small model lineup that rotates often: a model you rely on can disappear from the free tier."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Ideogram",
+      "category": "image",
+      "type": "changed",
+      "field": "whats_free",
+      "old": "Daily credits, no watermark, best-in-class text rendering inside images. Commercial use explicitly allowed.",
+      "new": "Weekly credits, no watermark, best-in-class text rendering inside images. Commercial use explicitly allowed."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Ideogram",
+      "category": "image",
+      "type": "changed",
+      "field": "limits",
+      "old": "10 credits/day, slow queue",
+      "new": "10 slow credits/week, resets Saturday 00:00 UTC",
+      "note": "Correction: Ideogram's official pricing page lists the free allowance as weekly, not daily. Flagged by a ChatGPT cross-check."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Ideogram",
+      "category": "image",
+      "type": "changed",
+      "field": "catch",
+      "old": "Free generations are public in the community gallery.",
+      "new": "Free generations are public in the community gallery, and the weekly allowance is a fraction of the old 10/day."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Google Flow (ex ImageFX / Whisk)",
+      "category": "image",
+      "type": "changed",
+      "field": "limits",
+      "old": "Monthly credit allowance",
+      "new": "50 credits/day, no rollover; free credits cover Veo 3.1 Lite/Fast/Quality only",
+      "note": "Pinned down from Google's official Flow help page (support.google.com/flow/answer/16526234)."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Stable Diffusion / Flux (local)",
+      "category": "image",
+      "type": "changed",
+      "field": "catch",
+      "old": "Needs a GPU (8GB+ VRAM for comfort) and some setup patience. Check each model's license.",
+      "new": "Needs a GPU (8GB+ VRAM for comfort) and some setup patience. Licenses differ per model: FLUX.1 schnell is Apache-2.0, FLUX.1 dev is non-commercial."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Luma Dream Machine",
+      "category": "video",
+      "type": "changed",
+      "field": "whats_free",
+      "old": "Small daily credit pool in the Dream Machine app.",
+      "new": "Small monthly credit pool in the Dream Machine web and iOS apps."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Luma Dream Machine",
+      "category": "video",
+      "type": "changed",
+      "field": "limits",
+      "old": "Roughly one short 720p clip per day, no audio",
+      "new": "Monthly credits: web amount unpublished, iOS app lists 250/mo. 720p drafts, no audio",
+      "note": "Correction: Luma's official pricing support page describes monthly credits, not a daily pool."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Luma Dream Machine",
+      "category": "video",
+      "type": "changed",
+      "field": "catch",
+      "old": "Permanent watermark, non-commercial only, and unused daily credits don't roll over.",
+      "new": "Permanent watermark, non-commercial only, and Luma doesn't publish the web free credit amount."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Claude",
+      "category": "chat",
+      "type": "changed",
+      "field": "limits",
+      "old": "Daily message cap, varies with demand",
+      "new": "~15-40 msgs per 5 h session window, varies with demand",
+      "note": "Wording clarification, not a Claude change: the cap is a 5-hour session window, not daily."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Gemini API",
+      "category": "api",
+      "type": "changed",
+      "field": "whats_free",
+      "old": "Real ongoing free tier on most Gemini models via AI Studio, including multimodal.",
+      "new": "Real ongoing free tier on Gemini Flash models via AI Studio, including multimodal."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Gemini API",
+      "category": "api",
+      "type": "changed",
+      "field": "limits",
+      "old": "Per model, e.g. Flash ~1,500 req/day, Pro ~50 req/day. Resets midnight PT",
+      "new": "Flash only, e.g. Gemini 3 Flash ~1,500 req/day; exact per-project quotas shown in AI Studio",
+      "note": "Pro models left the free tier in April 2026; Google no longer publishes exact free-tier quotas."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Gemini API",
+      "category": "api",
+      "type": "changed",
+      "field": "catch",
+      "old": "Enabling billing on the project kills the free tier instantly. Free-tier data may be used for training.",
+      "new": "Pro models were pulled from the free tier in April 2026. Enabling billing on the project kills the free tier instantly. Free-tier data may be used for training."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "OpenRouter",
+      "category": "api",
+      "type": "changed",
+      "field": "limits",
+      "old": "200 req/day across free models",
+      "new": "50 req/day (20 req/min) across free models",
+      "note": "Correction: the 200/day figure was outdated. OpenRouter's cap is 50/day without a one-time $10 credit purchase, 1,000/day with it."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Antigravity CLI",
+      "category": "code",
+      "type": "added",
+      "field": null,
+      "old": null,
+      "new": "Terminal coding agent on Gemini models with a personal Google account. Successor to Gemini CLI, which Google shut down for consumer accounts on June 18, 2026.",
+      "note": "Replaces the Gemini CLI row. Free quota is roughly 20 agent requests/day, shared with the Antigravity IDE."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Windsurf Free",
+      "category": "code",
+      "type": "changed",
+      "field": "limits",
+      "old": "~25 agent (Cascade) actions/month",
+      "new": "Daily/weekly quota, ~5 agent (Cascade) actions/day",
+      "note": "Correction of our earlier listing: the March 2026 quota is daily, not monthly."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Windsurf Free",
+      "category": "code",
+      "type": "changed",
+      "field": "catch",
+      "old": "Pricing was overhauled in March 2026 (credits replaced by quotas); premium models stay gated to paid plans.",
+      "new": "Pricing was overhauled in March 2026 (credits replaced by daily/weekly quotas); premium models stay gated to paid plans."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Suno",
+      "category": "audio",
+      "type": "changed",
+      "field": "catch",
+      "old": "No commercial use, no stem separation, shared (slower) queue.",
+      "new": "No commercial use and no downloads: free songs are listen-only inside Suno since the late-2025 Warner deal. Shared (slower) queue.",
+      "note": "Downloads were removed for free accounts after the late-2025 Warner licensing deal; recorded when caught."
+    },
+    {
+      "date": "2026-07-04",
+      "service": "Gemini CLI",
+      "category": "code",
+      "type": "removed",
+      "field": null,
+      "old": "Full terminal coding agent with a personal Google account.",
+      "new": null,
+      "note": "Shut down by Google for consumer accounts on 2026-06-18; successor is Antigravity CLI. Flagged by a reader via the corrections form."
+    },
+    {
       "date": "2026-07-02",
       "service": "Groq",
       "category": "api",
